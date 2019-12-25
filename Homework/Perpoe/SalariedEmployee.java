@@ -4,7 +4,7 @@ public  class SalariedEmployee extends  ColaEmployee{
 
 
     public int getHourlyEmployee() {
-        return HourlyEmployee=5000;
+        return HourlyEmployee;
     }
 
     public void setHourlyEmployee(int hourlyEmployee) {
@@ -15,8 +15,5 @@ public  class SalariedEmployee extends  ColaEmployee{
     @Override
     public void getSalary(int month) {
         System.out.println("固定工资："+getHourlyEmployee());
-    }
-    public String toString(){
-        return "固定工资："+getHourlyEmployee();
     }
 }

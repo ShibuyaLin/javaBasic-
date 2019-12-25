@@ -2,20 +2,29 @@ package Perpoe;
 
 public class Text {
     public  void  payWage(ColaEmployee emp,int month){
-        System.out.println(emp);
+
+        
     }
 
     public static void main(String[] args) {
         SalariedEmployee gu=new SalariedEmployee();
-        System.out.println(gu.toString());
+        gu.setHourlyEmployee(5000);
+        gu.getSalary(5000);
+
         SalesEmployee xiao=new SalesEmployee();
-        xiao.setTicheng(0.9);
-        xiao.setXiaoshou(1000);
-        System.out.println(xiao.toString());
+        xiao.setTicheng(0.5);
+        xiao.setXiaoshou(20000);
+        xiao.getSalary(1);
+
         HourlyEmployee s=new HourlyEmployee();
-        s.setWlokmaney(1);
-        s.setWloktime(180);
-        s.as();
+        s.setWlokmaney(50);
+        s.setWloktime(200);
+        s.getSalary(1);
+        ColaEmployee[] ss={gu,xiao,s};
+        for (ColaEmployee q:ss){
+
+        }
+
 
     }
 

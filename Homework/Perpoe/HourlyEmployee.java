@@ -5,14 +5,9 @@ public  class HourlyEmployee extends ColaEmployee {
         if (getWloktime()<=160){
             System.out.println("未超过160小时工资："+getWlokmaney()*getWloktime());
         }else if (getWloktime()>160){
-            System.out.println("超过160小时工资："+160*getWlokmaney()+((getWloktime()-160)*(getWlokmaney()*1.5)));
+            System.out.println("超过160小时工资："+(160*getWlokmaney()+(getWloktime()-160)*(getWlokmaney()*1.5)));
         }
     }
-    public void as(){ if (getWloktime()<=160){
-        System.out.println("未超过160小时工资："+getWlokmaney()*getWloktime());
-    }else if (getWloktime()>160){
-        System.out.println("超过160小时工资："+(160*getWlokmaney())+((getWloktime()-160)*(getWlokmaney()*1.5)));
-    }}
     public int getWlokmaney() {
         return wlokmaney;
     }
